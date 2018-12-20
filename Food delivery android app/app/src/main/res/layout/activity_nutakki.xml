@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5cbe5"
+    tools:context=".nutakki">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="109dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text3" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <RadioButton
+            android:id="@+id/sheriefRad"
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/sherief"
+            android:text="SHERIEF" />
+
+        <RadioButton
+            android:id="@+id/nagRadio"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:onClick="onRadioButtonClicked"
+            android:background="@drawable/nagendram"
+            android:text="NAGENDRAM TIFFIN HOTEL" />
+
+        <RadioButton
+            android:id="@+id/rasRadio"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:onClick="onRadioButtonClicked"
+            android:background="@drawable/rasool"
+            android:text="RASOOL" />
+
+        <RadioButton
+            android:id="@+id/bisRadio"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:onClick="onRadioButtonClicked"
+            android:background="@drawable/bismillah"
+            android:text="BISMILLAH" />
+
+        <RadioButton
+            android:id="@+id/chineseRadio"
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#ffffff"
+            android:text="Chinese Fast Foods" />
+
+        <RadioButton
+            android:id="@+id/curRadio"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#ffffff"
+            android:text="Curry Point" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/textt" />
+
+</android.support.constraint.ConstraintLayout>

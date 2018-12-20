@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sherief">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="save"
+        android:text="ADD to CART and Go Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openbill"
+        android:text="Proceed To Checkout"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="383dp"
+        android:layout_height="68dp"
+        android:onClick="deliveryoptions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deliveryinfo" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="370dp"
+        android:layout_height="435dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="239dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="66dp"
+                android:layout_marginLeft="66dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginRight="65dp"
+                android:padding="1dp"
+                android:text="How many BIRYANIS do you want from Sherief"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/BiryaniPrice"
+                android:layout_width="98dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="52dp"
+                android:text="The price is 120"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.808"
+                app:layout_constraintStart_toEndOf="@+id/numPickerBiryani"
+                app:layout_constraintTop_toBottomOf="@+id/question3" />
+
+            <NumberPicker
+                android:id="@+id/numPickerBiryani"
+                android:layout_width="64dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question3" />
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="239dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="66dp"
+                android:layout_marginLeft="66dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginRight="65dp"
+                android:padding="1dp"
+                android:text="How many Joints do you want from Sherief"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numPickerBiryani" />
+
+            <TextView
+                android:id="@+id/LegPieces"
+                android:layout_width="98dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="36dp"
+                android:text="The price is 50"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <NumberPicker
+                android:id="@+id/numPickerwings"
+                android:layout_width="64dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="26dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="533dp"
+                android:layout_marginEnd="303dp"
+                android:layout_marginRight="303dp"
+                android:padding="1dp"
+                android:text="How many Chicken curries do you want from Sherief"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Curryprice"
+                android:layout_width="98dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="72dp"
+                android:layout_marginRight="72dp"
+                android:text="The price is 80"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LegPieces" />
+
+            <NumberPicker
+                android:id="@+id/numPickercurry"
+                android:layout_width="64dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="58dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginRight="88dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/LegPieces"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numPickerwings" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView><![CDATA[
+
+
+
+    />
+/>
+
+
+]]>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Village_selection">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="381dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="358dp"
+        android:layout_height="476dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/vadRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="VADDESWARAM" />
+
+                <RadioButton
+                    android:id="@+id/revRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="REVENDRAPADU" />
+
+                <RadioButton
+                    android:id="@+id/nutRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="NUTAKKI" />
+
+                <ImageButton
+                    android:id="@+id/addButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    app:srcCompat="@drawable/text1" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
